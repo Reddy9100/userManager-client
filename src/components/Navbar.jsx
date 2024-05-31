@@ -86,8 +86,8 @@ const Navbar = () => {
         </ul>
       </nav>
       {showModal && (
-        <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-60">
-          <div className="bg-black text-orange-700 font-semibold md:w-[500px] p-8 rounded-lg relative">
+        <div className="fixed -top-1/4 left-0 w-full h-full flex justify-center items-center bg-opacity-100">
+          <div className="bg-white  text-orange-700 font-semibold md:w-[500px] p-8 rounded-lg relative bg-opacity-100">
             <h2 className="text-2xl mb-4">Admin Login</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -98,7 +98,7 @@ const Navbar = () => {
                 <label htmlFor="password" className="block mb-2">Password:</label>
                 <input type="password" id="password" name="password" value={adminCredentials.password} onChange={handleInputChange} className="w-full px-4 py-2 border border-gray-300 rounded" required />
               </div>
-              <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Submit</button>
+              <button type="submit" className="bg-gray-500 float-end text-white py-2 px-4 rounded hover:bg-blue-600">Submit</button>
             </form>
             <button className="absolute top-4 right-4 text-orange-600" onClick={closeModal}>Close</button>
           </div>
